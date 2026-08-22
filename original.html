@@ -1,0 +1,533 @@
+<html class="js html css_verticalspacer" lang="es-ES"><head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+  <meta name="generator" content="2018.1.1.386">
+  
+  <script type="text/javascript">
+   // Redirect to phone/tablet as necessary
+(function(c,b,d){var a=function(){if(navigator.maxTouchPoints>1)return!0;if(window.matchMedia&&window.matchMedia("(-moz-touch-enabled)").matches)return!0;for(var a=["Webkit","Moz","O","ms","Khtml"],b=0,c=a.length;b<c;b++){var d=a[b]+"MaxTouchPoints";if(d in navigator&&navigator[d])return!0}try{return document.createEvent("TouchEvent"),!0}catch(f){}return!1}(),f=function(a){a+="=";for(var b=document.cookie.split(";"),c=0;c<b.length;c++){for(var d=b[c];d.charAt(0)==" ";)d=d.substring(1,d.length);if(d.indexOf(a)==
+0)return d.substring(a.length,d.length)}return null};if(f("inbrowserediting")!="true"){var h,f=f("devicelock");f=="phone"&&d?h=d:f=="tablet"&&b&&(h=b);if(f!=c&&!h)if(window.matchMedia)window.matchMedia("(max-device-width: 415px)").matches&&d?h=d:window.matchMedia("(max-device-width: 960px)").matches&&b&&a&&(h=b);else{var c=Math.min(screen.width,screen.height)/(window.devicePixelRatio||1),f=window.screen.systemXDPI||0,g=window.screen.systemYDPI||0,f=f>0&&g>0?Math.min(screen.width/f,screen.height/g):
+0;(c<=370||f!=0&&f<=3)&&d?h=d:c<=960&&b&&a&&(h=b)}if(h)b=document.location.search||"",d=document.location.hash||"",document.write('<style type="text/css">body {visibility:hidden}</style>'),document.location=h+b+d}})("desktop","","phone/index.html");
+
+// Update the 'nojs'/'js' class on the html node
+document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+// Check that all required assets are uploaded and up-to-date
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "webpro.js", "musewpslideshow.js", "jquery.museoverlay.js", "touchswipe.js", "jquery.watch.js", "require.js", "jquery.musepolyfill.bgsize.js", "jquery.scrolleffects.js", "index.css"], "outOfDate":[]};
+
+function enviarcorreo()
+  {
+  if(document.edicion.puesto.options[document.edicion.puesto.selectedIndex].value=="")
+    {
+    alert('Seleccione un puesto');
+    document.edicion.puesto.focus();
+    return 0;
+    }
+   if(document.edicion.archivocv.value=="")
+    {
+    alert('Seleccione un documento');
+    document.edicion.archfake.focus();
+    return 0;
+    }
+  document.getElementById("divboton").innerHTML="<p align='center' style='margin: 15px; display: inline; color: white;'><i class='fa fa-refresh fa-spin fa-2x'></i></p>";
+  document.edicion.submit();
+  }
+</script>
+  
+  <link media="only screen and (max-width: 370px)" rel="alternate" href="http://elotevisual.com/phone/index.html">
+  <link rel="shortcut icon" href="images/--transcomunicador---favicon.ico?crc=3256711">
+  <title>- Transcomunicador -</title>
+  <link rel="stylesheet" href="lib/boot5/css/bootstrap.min.css">
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/boot5/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="lib/fw/css/font-awesome.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=3800630270">
+  <link rel="stylesheet" type="text/css" href="css/index.css?crc=241896673" id="pagesheet">
+  <style type="text/css">
+
+    .invisible {
+    display: none;
+  }
+
+  .visible {
+    display: contents;
+  }
+
+  </style>
+   <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="scripts/museconfig.js?crc=3936894949" src="scripts/museconfig.js?crc=3936894949"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="scripts/jquery-1.8.3.min.js?crc=209076791"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="museutils" src="scripts/museutils.js?crc=4250906080"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="whatinput" src="scripts/whatinput.js?crc=86476730"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="webpro" src="scripts/webpro.js?crc=214003453"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="musewpslideshow" src="scripts/musewpslideshow.js?crc=168777830"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.museoverlay" src="scripts/jquery.museoverlay.js?crc=4279841063"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="touchswipe" src="scripts/touchswipe.js?crc=4065839998"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.musepolyfill.bgsize" src="scripts/jquery.musepolyfill.bgsize.js?crc=178212883"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.watch" src="scripts/jquery.watch.js?crc=399457859"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.scrolleffects" src="scripts/jquery.scrolleffects.js?crc=3781904385"></script></head>
+ <body class="initialized" data-whatinput="mouse">
+
+  <div class="clearfix" id="page"><!-- group -->
+   <div class="clearfix grpelem" id="pu67348"><!-- group -->
+    <div class="browser_width" id="u67348-bw">
+     <div id="u67348"><!-- simple frame --></div>
+    </div>
+    <a class="nonblock nontext anim_swing clearfix" id="u67304-4" href="index.html#bolsa_desktop"><!-- content --><p>Bolsa de Trabajo</p></a>
+    <a class="nonblock nontext anim_swing clearfix" id="u72518-4" href="index.html#nosotros_desktop"><!-- content --><p>NOSOTROS</p></a>
+    <a class="nonblock nontext anim_swing clearfix" id="u68710-4" href="index.html#contacto_desktop"><!-- content --><p>CONTACTO</p></a>
+    <a class="nonblock nontext anim_swing clearfix" id="u72522-4" href="index.html#servicios_desktop"><!-- content --><p>SERVICIOS</p></a>
+    <a class="nonblock nontext anim_swing clearfix" id="u72997-4" href="index.html#estaciones_desktop"><!-- content --><p>Estaciones</p></a>
+    <a class="nonblock nontext anim_swing clip_frame" id="u78409" href="index.html#home_desktop"><!-- svg --><img class="svg" id="u78405" src="images/transcomunicador_logo.svg?crc=117795710" width="166" height="61" alt="" data-mu-svgfallback="images/transcomunicador_logo_poster_.png?crc=201470465"></a>
+    <a class="nonblock nontext clip_frame" id="u81296" href="https://www.facebook.com/profile.php?id=100064553537358&amp;mibextid=LQQJ4d" target="_blank"><!-- svg --><img class="svg" id="u81292" src="images/social_facebook_gray.svg?crc=196904645" width="30" height="30" alt="" data-mu-svgfallback="images/social_facebook_gray_poster_.png?crc=3792904485"></a>
+    <a class="nonblock nontext clip_frame" id="u81302" href="https://www.instagram.com/mexibuslinea2/" target="_blank"><!-- svg --><img class="svg" id="u81298" src="images/social_instagram_gray.svg?crc=172543258" width="30" height="30" alt="" data-mu-svgfallback="images/social_instagram_gray_poster_.png?crc=3985748447"></a>
+    <a class="nonblock nontext clip_frame" id="u81308" href="https://twitter.com/mexibusl2?lang=es" target="_blank"><!-- svg --><img class="svg" id="u81304" src="images/social_twitter_gray.svg?crc=510122024" width="30" height="30" alt="" data-mu-svgfallback="images/social_twitter_gray_poster_.png?crc=76532531"></a>
+   </div>
+   <div class="clearfix grpelem" id="phome_desktop"><!-- column -->
+    <a class="anchor_item colelem" id="home_desktop"></a>
+    <div class="SlideShowWidget clearfix HeroFillFrame colelem wp-slideshow-playing" id="slideshowu83093" data-contentlayout="stack" data-transitionstyle="fading"><!-- none box -->
+     <div class="popup_anchor" id="u83098popup" style="width: 0px;">
+      <div class="SlideShowContentPanel clearfix" id="u83098" style="width: 1024px; height: 0px; left: 100px;"><!-- stack box -->
+       <div class="SSSlide clip_frame grpelem wp-panel borderbox" id="u83099" style="width: 100%; display: none;"><!-- image -->
+        <img class="" id="u83099_img" data-src="images/header_01.png?crc=333519261" src="images/header_01.png?crc=333519261" alt="" data-width="1667" data-height="875" data-widget-id="slideshowu83093" style="width: 1666px; height: 875px; margin-top: 0px; margin-left: -311px;">
+       </div>
+       <div class="SSSlide clip_frame grpelem wp-panel borderbox" id="u83194" style="width: 100%; display: none;"><!-- image -->
+        <img class="" id="u83194_img" data-src="images/header_02.png?crc=291369014" src="images/header_02.png?crc=291369014" alt="" data-width="1667" data-height="875" data-widget-id="slideshowu83093" style="width: 1666px; height: 875px; margin-top: 0px; margin-left: -311px;">
+       </div>
+       <div class="SSSlide clip_frame grpelem wp-panel borderbox" id="u83220" style="width: 100%; display: block; opacity: 0.198535;"><!-- image -->
+        <img class="" id="u83220_img" data-src="images/header_03.png?crc=348518137" src="images/header_03.png?crc=348518137" alt="" data-width="1667" data-height="875" data-widget-id="slideshowu83093" style="width: 1666px; height: 875px; margin-top: 0px; margin-left: -311px;">
+       </div>
+       <div class="SSSlide clip_frame grpelem wp-panel borderbox wp-panel-active" id="u83246" style="width: 100%; display: block; opacity: 0.798952;"><!-- image -->
+        <img class="" id="u83246_img" data-src="images/header_04.png?crc=4211552441" src="images/header_04.png?crc=4211552441" alt="" data-width="1667" data-height="875" data-widget-id="slideshowu83093" style="width: 1666px; height: 875px; margin-top: 0px; margin-left: -311px;">
+       </div>
+       <div class="SSSlide clip_frame grpelem wp-panel borderbox" id="u83272" style="width: 100%; display: none;"><!-- image -->
+        <img class="" id="u83272_img" data-src="images/header_05.png?crc=408658607" src="images/header_05.png?crc=408658607" alt="" data-width="1667" data-height="875" data-widget-id="slideshowu83093" style="width: 1666px; height: 875px; margin-top: 0px; margin-left: -311px;">
+       </div>
+       <div class="SSSlide clip_frame grpelem wp-panel borderbox" id="u83298" style="width: 100%; display: none;"><!-- image -->
+        <img class="" id="u83298_img" data-src="images/header_06.png?crc=4031655443" src="images/header_06.png?crc=4031655443" alt="" data-width="1667" data-height="875" data-widget-id="slideshowu83093" style="width: 1666px; height: 875px; margin-top: 0px; margin-left: -311px;">
+       </div>
+       <div class="SSSlide clip_frame grpelem wp-panel borderbox" id="u83324" style="width: 100%; display: none;"><!-- image -->
+        <img class="" id="u83324_img" data-src="images/header_07.png?crc=4204014442" src="images/header_07.png?crc=4204014442" alt="" data-width="1667" data-height="875" data-widget-id="slideshowu83093" style="width: 1666px; height: 875px; margin-top: 0px; margin-left: -311px;">
+       </div>
+      </div>
+     </div>
+     <div class="popup_anchor" id="u83095popup">
+      <div class="SlideShowCaptionPanel clearfix" id="u83095"><!-- stack box -->
+       <div class="SSSlideCaption clearfix grpelem" id="u83096-6" style="display: none;"><!-- content -->
+        <div id="u83096-5">
+         <p>Unidad</p>
+         <p>a Gas</p>
+        </div>
+       </div>
+       <div class="SSSlideCaption clearfix grpelem" id="u83210-4" style="display: none;"><!-- content -->
+        <div id="u83210-3">
+         <p>RECUERDA SIEMPRE SOSTENERTE DE LOS TUBOS Y PASAMANOS</p>
+        </div>
+       </div>
+       <div class="SSSlideCaption clearfix grpelem" id="u83236-6" style="display: none;"><!-- content -->
+        <div id="u83236-5">
+         <p>Transporte</p>
+         <p>Rosa</p>
+        </div>
+       </div>
+       <div class="SSSlideCaption clearfix grpelem" id="u83262-4" style="display: block;"><!-- content -->
+        <div id="u83262-3">
+         <p>Somos tu mejor opción de viaje</p>
+        </div>
+       </div>
+       <div class="SSSlideCaption clearfix grpelem" id="u83288-4" style="display: none;"><!-- content -->
+        <div id="u83288-3">
+         <p>Transporte Exprés</p>
+        </div>
+       </div>
+       <div class="SSSlideCaption clearfix grpelem" id="u83314-4" style="display: none;"><!-- content -->
+        <div id="u83314-3">
+         <p>Respetemos los lugares reservados</p>
+        </div>
+       </div>
+       <div class="SSSlideCaption clearfix grpelem" id="u83340-6" style="display: none;"><!-- content -->
+        <div id="u83340-5">
+         <p>Transporte</p>
+         <p>Ordinario</p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="popup_anchor" id="u83102-4popup">
+      <div class="SlideShowLabel SSSlideCount clearfix" id="u83102-4"><!-- content -->
+       <div id="u83102-3">
+        <p>4 - 7</p>
+       </div>
+      </div>
+     </div>
+     <div class="popup_anchor" id="u83104-4popup">
+      <div class="SSPreviousButton rgba-background clearfix" id="u83104-4" tabindex="0" role="button" aria-label="previous"><!-- content -->
+       <div id="u83104-3">
+        <p>&lt;</p>
+       </div>
+      </div>
+     </div>
+     <div class="popup_anchor" id="u83097-4popup">
+      <div class="SSNextButton rgba-background clearfix" id="u83097-4" tabindex="0" role="button" aria-label="next"><!-- content -->
+       <div id="u83097-3">
+        <p>&gt;</p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="browser_width colelem" id="u84072-bw" style="height: 868px;">
+     <div class="museBGSize" id="u84072" style="background-attachment: fixed;"><!-- column -->
+      <div class="clearfix" id="u84072_align_to_page">
+       <a class="anchor_item colelem" id="nosotros_desktop"></a>
+       <div class="clearfix colelem" id="pu84100"><!-- group -->
+        <div class="clearfix grpelem" id="u84100"><!-- group -->
+         <div class="grpelem" id="u84103"><!-- simple frame --></div>
+         <div class="grpelem" id="u84101"><!-- simple frame --></div>
+         <div class="grpelem" id="u84102"><!-- simple frame --></div>
+        </div>
+        <div class="clearfix grpelem" id="u84097-4"><!-- content -->
+         <p>Historia</p>
+        </div>
+        <div class="clearfix grpelem" id="u84094-4"><!-- content -->
+         <p>Mexibús Línea 2 - Transcomunicador</p>
+        </div>
+       </div>
+       <div class="clearfix colelem" id="u84112-4"><!-- content -->
+        <p>En mayo de 2011 la concesión del servicio de transporte masivo para los municipios de Ecatepec, Coacalco y Tultitlán fue otorgada a un grupo formado por 21 empresas transportistas del Estado de México.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu84073"><!-- group -->
+     <div class="browser_width grpelem" id="u84073-bw" style="height: 868px;">
+      <div class="museBGSize" id="u84073" style="background-attachment: fixed;"><!-- simple frame --></div>
+     </div>
+     <div class="browser_width grpelem" id="u81278-bw" style="height: 393px;">
+      <div id="u81278"><!-- group -->
+       <div class="clearfix" id="u81278_align_to_page">
+        <div class="clearfix grpelem" id="u81390-7"><!-- content -->
+         <p>Transportamos a más de 200,000 personas todos los días, conectando con 43 estaciones a lo largo de 4 municipios principales de la entidad.</p>
+         <p>&nbsp;</p>
+         <p>Recorremos 23,000 km diarios para acercar a nuestros usuarios a su destino de trabajo, hogar o descanso, siempre con el firme objetivo de proporcionar un transporte accesible, seguro y de la más alta calidad.</p>
+        </div>
+        <div class="clearfix grpelem" id="u81393-4"><!-- content -->
+         <p>Alcance</p>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="browser_width grpelem" id="u80902-bw" style="height: 557px;">
+      <div id="u80902"><!-- column -->
+       <div class="clearfix" id="u80902_align_to_page">
+        <div class="clip_frame colelem" id="u84025"><!-- svg -->
+         <img class="svg" id="u84026" src="images/transcomunicador_logo_blanco.svg?crc=506635160" width="309" height="113" alt="" data-mu-svgfallback="images/transcomunicador_logo_blanco_poster_.png?crc=419820523">
+        </div>
+        <div class="clearfix colelem" id="pu81420-4"><!-- group -->
+         <div class="clearfix grpelem" id="u81420-4"><!-- content -->
+          <p>El lanzamiento de este nuevo sistema representa un beneficio directo a más de 2.0 m de habitantes. Empezando por ser la opción de transporte masivo más ágil de la entidad, hasta la generación de cientos de empleos directos, entre operadores, mecánicos, personal administrativo y de seguridad.</p>
+         </div>
+         <div class="clearfix grpelem" id="u81423-4"><!-- content -->
+          <p>Beneficios</p>
+         </div>
+         <div class="clip_frame grpelem" id="u81426"><!-- image -->
+          <img class="block" id="u81426_img" src="images/nosotros_02.jpg?crc=145640534" alt="" width="320" height="199">
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="clip_frame grpelem" id="u81403"><!-- svg -->
+      <img class="svg" id="u81399" src="images/mapa_alcance.svg?crc=4027479991" width="570" height="494" alt="" data-mu-svgfallback="images/mapa_alcance_poster_.png?crc=3903530087">
+     </div>
+     <div class="browser_width grpelem" id="u84134-bw" style="height: 138px;">
+      <div id="u84134"><!-- simple frame --></div>
+     </div>
+     <div class="clearfix grpelem" id="u84115-4"><!-- content -->
+      <p>Quienes en conjunto con el gobierno local y tras 4 años de arduo trabajo, lograron lanzar el servicio Mexibús el 15 de enero de 2015.</p>
+     </div>
+    </div>
+    <a class="anchor_item colelem" id="servicios_desktop"></a>
+    <div class="clearfix colelem" id="pu81350"><!-- group -->
+     <div class="clearfix grpelem" id="u81350"><!-- group -->
+      <div class="grpelem" id="u81352"><!-- simple frame --></div>
+      <div class="grpelem" id="u81353"><!-- simple frame --></div>
+      <div class="grpelem" id="u81351"><!-- simple frame --></div>
+     </div>
+     <div class="clearfix grpelem" id="u81354-4"><!-- content -->
+      <p>Servicios</p>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu78974"><!-- group -->
+     <div class="clip_frame grpelem" id="u78974"><!-- svg -->
+      <img class="svg" id="u78970" src="images/icon_reloj.svg?crc=3947869398" width="49" height="49" alt="" data-mu-svgfallback="images/icon_reloj_poster_.png?crc=4111353668">
+     </div>
+     <div class="clearfix grpelem" id="u78904-8"><!-- content -->
+      <p id="u78904-2">Horarios de operación</p>
+      <p id="u78904-4">04:00am - 01:00am</p>
+      <p id="u78904-6">de lunes a domingo</p>
+     </div>
+     <div class="clip_frame grpelem" id="u79097"><!-- svg -->
+      <img class="svg" id="u79098" src="images/icon_trensub.svg?crc=3981841616" width="49" height="49" alt="" data-mu-svgfallback="images/icon_trensub_poster_.png?crc=164966900">
+     </div>
+     <div class="clearfix grpelem" id="u81634-8"><!-- content -->
+      <p id="u81634-2">Conexión con Línea 1 y</p>
+      <p id="u81634-4">Tren Sub-Urbano</p>
+      <p id="u81634-6">Las Américas y Lechería</p>
+     </div>
+    </div>
+    
+    <div class="clearfix colelem" id="pu78980"><!-- group -->
+     <div class="clip_frame grpelem" id="u78980"><!-- svg -->
+      <img class="svg" id="u78976" src="images/icon_reloj15.svg?crc=3868399799" width="49" height="49" alt="" data-mu-svgfallback="images/icon_reloj15_poster_.png?crc=100416634">
+     </div>
+     <div class="clearfix grpelem" id="u78932-8"><!-- content -->
+      <p id="u78932-2">Servicio Rosa</p>
+      <p id="u78932-6">Cada <span id="u78932-4">15 mins.</span> un Autobús Rosa en cada estación</p>
+     </div>
+     <div class="clip_frame grpelem" id="u79142"><!-- svg -->
+      <img class="svg" id="u78976" src="images/icon_reloj15.svg?crc=3868399799" width="49" height="49" alt="" data-mu-svgfallback="images/icon_reloj15_poster_.png?crc=100416634">
+     </div>
+     <div class="clearfix grpelem" id="u79109-8"><!-- content -->
+      <p id="u79109-2">Servicio Expres</p>
+      <p id="u79109-4">Ecatepec 05:03 a 22:19 hrs.</p>
+      <p id="u79109-6">Lechería 05:54 a 23:10 hrs.</p>
+     </div>
+    </div>
+
+
+
+    <div class="clearfix colelem" id="pu78962"><!-- group -->
+     <div class="clip_frame grpelem" id="u78962"><!-- svg -->
+      <img class="svg" id="u78958" src="images/icon_bus_station.svg?crc=4190088855" width="49" height="49" alt="" data-mu-svgfallback="images/icon_bus_station_poster_.png?crc=187609057">
+     </div>
+     <div class="clearfix grpelem" id="u78938-6"><!-- content -->
+      <p><span id="u78938">42 estaciones</span></p>
+      <p>y 1 terminal</p>
+     </div>
+     <div class="clip_frame grpelem" id="u79175"><!-- svg -->
+      <img class="svg" id="u79171" src="images/icon_kiosko.svg?crc=4148222299" width="53" height="53" alt="" data-mu-svgfallback="images/icon_kiosko_poster_.png?crc=4156976635">
+     </div>
+     <div class="clearfix grpelem" id="u79106-6"><!-- content -->
+      <p><span id="u79106">Puntos de recarga</span></p>
+      <p>en todas las estaciones</p>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu78968"><!-- group -->
+     <div class="clip_frame grpelem" id="u78968"><!-- svg -->
+      <img class="svg" id="u78964" src="images/icon_moneda.svg?crc=3808940338" width="49" height="49" alt="" data-mu-svgfallback="images/icon_moneda_poster_.png?crc=17603279">
+     </div>
+     <div class="clearfix grpelem" id="u78944-6"><!-- content -->
+      <p><span id="u78944">Tarifa plana de $9.00</span></p>
+      <p>en los 23.05 kms de recorrido</p>
+     </div>
+     <div class="clip_frame grpelem" id="u79155"><!-- svg -->
+      <img class="svg" id="u79151" src="images/icon_security.svg?crc=428567770" width="49" height="49" alt="" data-mu-svgfallback="images/icon_security_poster_.png?crc=3801119687">
+     </div>
+     <div class="clearfix grpelem" id="u79124-4"><!-- content -->
+      <p>Seguridad en todas las estaciones</p>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="pu79162"><!-- group -->
+     <div class="clip_frame grpelem" id="u79162"><!-- svg -->
+      <img class="svg" id="u79163" src="images/icon_reloj15.svg?crc=3868399799" width="49" height="49" alt="" data-mu-svgfallback="images/icon_reloj15_poster_.png?crc=100416634">
+     </div>
+     <div class="clearfix grpelem" id="u79130-7"><!-- content -->
+      <p>Tiempo aproximado</p>
+      <p>de recorrido: <span id="u79130-4">50 mins.</span></p>
+     </div>
+    </div>
+    
+    <a class="anchor_item colelem" id="estaciones_desktop"></a>
+    <div class="clearfix colelem" id="pu81451"><!-- group -->
+     <div class="clearfix grpelem" id="u81451"><!-- group -->
+      <div class="grpelem" id="u81454"><!-- simple frame --></div>
+      <div class="grpelem" id="u81452"><!-- simple frame --></div>
+      <div class="grpelem" id="u81453"><!-- simple frame --></div>
+     </div>
+     <div class="clearfix grpelem" id="u81463-4"><!-- content -->
+      <p>Estaciones</p>
+     </div>
+    </div>
+    <div class="clip_frame colelem" id="u80590"><!-- svg -->
+     <img class="svg" id="u80587" src="images/mexibus_logo.svg?crc=224311843" width="320" height="101" alt="" data-mu-svgfallback="images/mexibus_logo_poster_.png?crc=471559409">
+    </div>
+    <div class="clip_frame colelem" id="u81733"><!-- svg -->
+     <img class="svg" id="u81729" src="images/estaciones_tultitlan.svg?crc=3764594033" width="1024" height="357" alt="" data-mu-svgfallback="images/estaciones_tultitlan_poster_.png?crc=4141503788">
+    </div>
+    <div class="clip_frame colelem" id="u81767"><!-- svg -->
+     <img class="svg" id="u81768" src="images/estaciones_coacalco.svg?crc=4170594084" width="1024" height="357" alt="" data-mu-svgfallback="images/estaciones_coacalco_poster_.png?crc=4154794259">
+    </div>
+    <div class="clip_frame colelem" id="u81804"><!-- svg -->
+     <img class="svg" id="u81800" src="images/estaciones_ecatepec.svg?crc=81690281" width="1024" height="428" alt="" data-mu-svgfallback="images/estaciones_ecatepec_poster_.png?crc=246017351">
+    </div>
+    <div class="clearfix colelem" id="pu81853"><!-- group -->
+     <div class="browser_width grpelem" id="u81853-bw" style="height: 762px;">
+      <div id="u81853"><!-- group -->
+       <div class="clearfix" id="u81853_align_to_page">
+        <div class="clearfix grpelem" id="ppu81936"><!-- column -->
+         <div class="clearfix colelem" id="pu81936"><!-- group -->
+          <div class="clearfix grpelem" id="u81936"><!-- group -->
+           <div class="grpelem" id="u81937"><!-- simple frame --></div>
+           <div class="grpelem" id="u81938"><!-- simple frame --></div>
+           <div class="grpelem" id="u81939"><!-- simple frame --></div>
+          </div>
+          <div class="clearfix grpelem" id="u81835-4"><!-- content -->
+           <p>Rutas</p>
+          </div>
+         </div>
+         <div class="clip_frame colelem" id="u81967"><!-- svg -->
+          <img class="svg" id="u81963" src="images/tipo_servicio_icon.svg?crc=3776330090" width="498" height="57" alt="" data-mu-svgfallback="images/tipo_servicio_icon_poster_.png?crc=4148205516">
+         </div>
+         <div class="clearfix colelem" id="pu81869"><!-- group -->
+          <div class="clip_frame grpelem" id="u81869"><!-- svg -->
+           <img class="svg" id="u81865" src="images/icons_reservado.svg?crc=480318974" width="105" height="105" alt="" data-mu-svgfallback="images/icons_reservado_poster_.png?crc=3764104901">
+          </div>
+          <div class="clearfix grpelem" id="u81893-4"><!-- content -->
+           <p>Respeta los lugares reservados</p>
+          </div>
+         </div>
+        </div>
+        <div class="clearfix grpelem" id="u81887-6"><!-- content -->
+         <p>Para evitar accidentes,</p>
+         <p>sujétate del pasamanos y/o de los tubos del autobús.</p>
+        </div>
+        <div class="clip_frame grpelem" id="u83379"><!-- svg -->
+         <img class="svg" id="u83375" src="images/icons_manotubo.svg?crc=4179226780" width="105" height="87" alt="" data-mu-svgfallback="images/icons_manotubo_poster_.png?crc=4218648985">
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="browser_width grpelem" id="u84143-bw" style="height: 343px;">
+      <div id="u84143"><!-- group -->
+       <div class="clearfix" id="u84143_align_to_page">
+        <div class="clip_frame grpelem" id="u81896"><!-- image -->
+         <img class="block" id="u81896_img" src="images/recorrido_mexibusl2.jpg?crc=3919303814" alt="" width="1024" height="356">
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="browser_width grpelem" id="u84158-bw" style="height: 12px;">
+      <div id="u84158"><!-- simple frame --></div>
+     </div>
+     <div class="browser_width grpelem" id="u84152-bw" style="height: 12px;">
+      <div id="u84152"><!-- simple frame --></div>
+     </div>
+    </div>
+    <div class="browser_width colelem" id="u84051-bw" style="height: 291px;">
+     <div id="u84051"><!-- group -->
+      <div class="clearfix" id="u84051_align_to_page">
+       <div class="clearfix grpelem" id="u81940"><!-- group -->
+        <div class="grpelem" id="u81941"><!-- simple frame --></div>
+        <div class="grpelem" id="u81942"><!-- simple frame --></div>
+        <div class="grpelem" id="u81943"><!-- simple frame --></div>
+       </div>
+       <div class="clearfix grpelem" id="pbolsa_desktop"><!-- column -->
+        <a class="anchor_item colelem" id="bolsa_desktop"></a>
+        <div class="clearfix colelem" id="u81944-6"><!-- content -->
+         <p>Bolsa</p>
+         <p>de Trabajo</p>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+
+    <form name="edicion" action="enviamail.php" target="_self" method="post" enctype="multipart/form-data">
+      <div class="browser_width colelem" id="u84045-bw" style="height: 945px;">
+       <div id="u84045"><!-- column -->
+        <div class="clearfix" id="u84045_align_to_page">
+         <div class="clearfix colelem" id="u84054-7"><!-- content -->
+          <p id="u84054-2">Estamos seguros que tenemos algo para ti.</p>
+          <p id="u84054-3">&nbsp;</p>
+          <p id="u84054-5">Elige el puesto al que quieras postularte y no olvides subir tu currículum vitae.</p>
+         </div>
+         <div class="clearfix colelem" id="pu84057"><!-- group -->
+           <div class="grpelem" id="u84057" style="background-color: transparent;">
+            <select name="puesto" class="form-select">
+              <option value="">(seleccione)</option><option value="operador">Operador</option>
+            </select>
+          </div>
+          <div class="grpelem" id="u84063" style="background-color: transparent;">
+              <button type="button" onclick="document.edicion.archivocv.click();" id="archfake" name="archfake" class="btn btn-info"><div id="divfake">Seleccionar...</div></button>
+              <input type="file" name="archivocv" size="25" accept=".pdf,.doc,.docx" onchange=" document.getElementById('divfake').innerHTML=document.edicion.archivocv.value.split('\\').pop(-1); document.getElementById('divboton').className='visible'; " style="display: none;">
+              &nbsp;<span id="divboton" class="invisible"><button type="button" onclick="enviarcorreo();" class="btn btn-success">Enviar</button></span>
+          </div>
+         </div>
+         <div class="clearfix colelem" id="pu84069-4"><!-- group -->
+          <div class="clearfix grpelem" id="u84069-4"><!-- content -->
+           <p>Puesto</p>
+          </div>
+          <div class="clearfix grpelem" id="u84066-4"><!-- content -->
+           <p>Sube tu CV. Acepta formato pdf, doc</p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+    </form>
+
+    <a class="anchor_item colelem" id="contacto_desktop"></a>
+    <div class="clearfix colelem" id="pu79185"><!-- group -->
+     <div class="clip_frame grpelem" id="u79185"><!-- svg -->
+      <img class="svg" id="u79182" src="images/transcomunicador_logo.svg?crc=117795710" width="305" height="112" alt="" data-mu-svgfallback="images/transcomunicador_logo_poster_.png?crc=201470465">
+     </div>
+     <a class="nonblock nontext clearfix grpelem" id="u75525-10" href="mailto:contacto@rutamedica.com"><!-- content --><p id="u75525-2">Transcomunicador Mexiquense</p><p id="u75525-4">Avenida Central esquina Oaxaca</p><p id="u75525-6">Las Americas, Ecatepec de Morelos</p><p id="u75525-8">Estado de México, CP. 55076</p></a>
+    </div>
+    <div class="clearfix colelem" id="pu84036-7"><!-- group -->
+     <a class="nonblock nontext clearfix grpelem" id="u84036-7" href="mailto:contacto@rutamedica.com"><!-- content --><p>contacto@transcomunicador.com</p><p>&nbsp;</p><p>reporte@mexibus2.mx</p></a>
+     <a class="nonblock nontext grpelem" id="u79340" href="mailto:contacto@transcomunicador.com"><!-- content --></a>
+     <a class="nonblock nontext grpelem" id="u79346" href="mailto:reporte@mexibus2.mx"><!-- content --></a>
+    </div>
+    <div class="clearfix colelem" id="pu79289"><!-- group -->
+     <a class="nonblock nontext clip_frame grpelem" id="u79289" href="https://www.facebook.com/profile.php?id=100064553537358&amp;mibextid=LQQJ4d" target="_blank"><!-- svg --><img class="svg" id="u79290" src="images/social_facebook_color.svg?crc=3835756737" width="40" height="40" alt="" data-mu-svgfallback="images/social_facebook_color_poster_.png?crc=3915462884"></a>
+     <a class="nonblock nontext clip_frame grpelem" id="u79287" href="https://www.instagram.com/mexibuslinea2/" target="_blank"><!-- svg --><img class="svg" id="u79288" src="images/social_instagram_color.svg?crc=4044176935" width="40" height="40" alt="" data-mu-svgfallback="images/social_instagram_color_poster_.png?crc=4110025813"></a>
+     <a class="nonblock nontext clip_frame grpelem" id="u79291" href="https://twitter.com/mexibusl2?lang=es" target="_blank"><!-- svg --><img class="svg" id="u79292" src="images/social_twitter_color.svg?crc=3891735473" width="40" height="40" alt="" data-mu-svgfallback="images/social_twitter_color_poster_.png?crc=3842055489"></a>
+    </div>
+    <div class="clearfix colelem" id="u83063"><!-- group -->
+     <a class="nonblock nontext anim_swing rounded-corners grpelem" id="u83064" href="index.html#home_desktop"><!-- content --></a>
+     <a class="nonblock nontext anim_swing clip_frame grpelem" id="u83065" href="index.html#home_desktop"><!-- svg --><img class="svg" id="u83066" src="images/btn_up.svg?crc=374012409" width="25" height="45" alt="" data-mu-svgfallback="images/btn_up_poster_.png?crc=414706268"></a>
+    </div>
+    <div class="clearfix colelem" id="pu83682"><!-- group -->
+     <div class="browser_width grpelem" id="u83682-bw" style="height: 72px;">
+      <div id="u83682"><!-- simple frame --></div>
+     </div>
+     <div class="browser_width grpelem" id="u75501-bw" style="height: 599px;">
+      <div class="size_browser_width" id="u75501"><!-- custom html -->
+       
+<iframe class="actAsDiv" width="100%" height="599" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=es&amp;q=Transcomunicador%2C%20Avenida%20Central%2C%20Ecatepec%2C%20State%20of%20Mexico&amp;aq=0&amp;ie=UTF8&amp;t=m&amp;z=16&amp;iwloc=A&amp;output=embed"></iframe>
+
+      </div>
+     </div>
+    </div>
+    <div class="browser_width colelem" id="u83690-bw" style="height: 85px;">
+     <div id="u83690"><!-- group -->
+      <div class="clearfix" id="u83690_align_to_page">
+       <a class="nonblock nontext clearfix grpelem" id="u67156-4" href="http://elotevisual.com" target="_blank"><!-- content --><p>CDMX 2023 - Diseño de Webpage Elotevisual | All Rights Reserved</p></a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="verticalspacer" data-offset-top="10684" data-content-above-spacer="10683" data-content-below-spacer="0" style="height: calc(-9536px + 100vh);"></div>
+  </div>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   // Decide whether to suppress missing file error or not based on preference setting
+var suppressMissingFileError = false
+</script>
+  <script type="text/javascript">
+   window.Muse.assets.check=function(c){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},d=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
+16);return 0},f=function(f){for(var g=document.getElementsByTagName("link"),j=0;j<g.length;j++)if("text/css"==g[j].type){var l=(g[j].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!l||!l[1]||!l[2])break;b[l[1]]=l[2]}g=document.createElement("div");g.className="version";g.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(g);for(j=0;j<Muse.assets.required.length;){var l=Muse.assets.required[j],k=l.match(/([\w\-\.]+)\.(\w+)$/),i=k&&k[1]?
+k[1]:null,k=k&&k[2]?k[2]:null;switch(k.toLowerCase()){case "css":i=i.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");g.className+=" "+i;i=a(d(g,"color"));k=a(d(g,"backgroundColor"));i!=0||k!=0?(Muse.assets.required.splice(j,1),"undefined"!=typeof b[l]&&(i!=b[l]>>>24||k!=(b[l]&16777215))&&Muse.assets.outOfDate.push(l)):j++;g.className="version";break;case "js":j++;break;default:throw Error("Unsupported file type: "+k);}}c?c().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
+g.parentNode.removeChild(g);if(Muse.assets.outOfDate.length||Muse.assets.required.length)g="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",f&&Muse.assets.outOfDate.length&&(g+="\nOut of date: "+Muse.assets.outOfDate.join(",")),f&&Muse.assets.required.length&&(g+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(g+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(g)):alert(g)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
+setTimeout(function(){f(!0)},5E3):f()}};
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","webpro","musewpslideshow","jquery.museoverlay","touchswipe","jquery.musepolyfill.bgsize","jquery.watch","jquery.scrolleffects"],function(c){var $ = c;$(document).ready(function(){try{
+window.Muse.assets.check($);/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
+Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
+Muse.Utils.initWidget('#slideshowu83093', ['#bp_infinity'], function(elem) { var widget = new WebPro.Widget.ContentSlideShow(elem, {autoPlay:true,displayInterval:3000,slideLinkStopsSlideShow:false,transitionStyle:'fading',lightboxEnabled_runtime:false,shuffle:false,transitionDuration:500,enableSwipe:true,elastic:'fullWidth',resumeAutoplay:true,resumeAutoplayInterval:3000,playOnce:false,autoActivate_runtime:false,isResponsive:false}); $(elem).data('widget', widget); return widget; });/* #slideshowu83093 */
+Muse.Utils.fullPage('#page');/* 100% height page */
+$('#u84072').registerBackgroundPositionScrollEffect([{"in":[-Infinity,825.67],"speed":[0,0]},{"in":[825.67,Infinity],"speed":[0,0]}]);/* scroll effect */
+$('#u84073').registerBackgroundPositionScrollEffect([{"in":[-Infinity,2853.67],"speed":[0,0]},{"in":[2853.67,Infinity],"speed":[0,0]}]);/* scroll effect */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
+
+</script>
+  <!-- RequireJS script -->
+  <script src="scripts/require.js?crc=4177726516" type="text/javascript" async="" data-main="scripts/museconfig.js?crc=3936894949" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType &amp;&amp; requireType.toString &amp;&amp; requireType.toString().indexOf &amp;&amp; 0 &lt;= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+   
+
+</body></html>
